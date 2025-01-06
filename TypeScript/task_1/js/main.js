@@ -1,8 +1,10 @@
-var teacher3 = {
-    firstName: 'John',
-    lastName: 'Doe',
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var director1 = {
+    firstName: "John",
+    lastName: "Doe",
+    location: "New York",
     fullTimeEmployee: false,
-    location: 'New York',
-    contract: false,
+    numberOfReports: 17
 };
-console.log(teacher3);
+console.log(director1);

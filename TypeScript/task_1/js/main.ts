@@ -6,13 +6,17 @@ export interface Teacher {
     location: string;
     [key: string]: any;
     }
+interface Directors extends Teacher {
+    numberOfReports: number;
+}
 
-const teacher3: Teacher = {
-    firstName: 'John',
-    lastName: 'Doe',
+
+const director1: Directors = {
+    firstName: "John",
+    lastName: "Doe",
+    location: "New York",
     fullTimeEmployee: false,
-    location: 'New York',
-    contract: false,
-};
+    numberOfReports: 17
+}
 
-console.log(teacher3);
+console.log(director1);
