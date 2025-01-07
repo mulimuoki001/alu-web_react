@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createEmployee = exports.Teacher = exports.Director = void 0;
+exports.executeWork = exports.isDirector = exports.createEmployee = exports.Teacher = exports.Director = void 0;
 exports.Director = /** @class */ (function () {
     function Director() {
     }
@@ -38,6 +38,18 @@ var createEmployee = function (salary) {
     }
 };
 exports.createEmployee = createEmployee;
-console.log((0, exports.createEmployee)(200));
-console.log((0, exports.createEmployee)(1000));
-console.log((0, exports.createEmployee)("$500"));
+var isDirector = function (employee) {
+    return employee instanceof exports.Director;
+};
+exports.isDirector = isDirector;
+var executeWork = function (employee) {
+    if ((0, exports.isDirector)(employee)) {
+        return employee.workDirectorTasks();
+    }
+    else {
+        return employee.workTeacherTasks();
+    }
+};
+exports.executeWork = executeWork;
+console.log((0, exports.executeWork)((0, exports.createEmployee)(200)));
+console.log((0, exports.executeWork)((0, exports.createEmployee)(1000)));
