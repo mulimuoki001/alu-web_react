@@ -56,3 +56,19 @@ export const executeWork = (employee: DirectorInterface | TeacherInterface): str
 
 console.log(executeWork(createEmployee(200)))
 console.log(executeWork(createEmployee(1000)))
+
+type Subjects = "Math" | "History";
+
+
+export const teachClass = (todayClass: Subjects): string => {
+    
+    if (todayClass === "Math") {
+            return "Teaching Math";
+    } else if (todayClass === "History") {
+            return "Teaching History";
+    }
+    
+}
+
+console.log(teachClass("Math"));
+console.log(teachClass("History"));
