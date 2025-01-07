@@ -32,11 +32,11 @@ console.log(printTeacher("John", "Doe"));
 
 
 
-interface StudentClassConstructor {
+export interface StudentClassConstructor {
     new(firstName: string, lastName: string): StudentClass
 }
 
-interface StudentClassInterface {
+export interface StudentClassInterface {
     workOnHomework(): string;
     displayName(): string;
 }
