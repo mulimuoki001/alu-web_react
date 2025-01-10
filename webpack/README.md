@@ -1,1 +1,1 @@
-Webpack basics
+Webpack basic Installation
