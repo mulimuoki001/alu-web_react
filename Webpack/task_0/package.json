@@ -9,7 +9,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "web-cli": "^1.0.0-prealpha",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
   },
