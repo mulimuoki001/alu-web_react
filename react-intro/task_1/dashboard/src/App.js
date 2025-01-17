@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import logo from './Holberton-logo.jpg';
+import { getFooterCopy, getFullYear } from './utils';
 
 
 const App =() => {
@@ -17,10 +18,12 @@ const App =() => {
             <div className="App-body">
                 <p>Login to access the full dashboard</p>
             </div>
-            <hr style={{ borderTop: '3px solid red', marginTop: '500px'}}/>
+            <hr style={{ borderTop: '3px solid red', marginTop: '700px'}}/>
 
             <div className="App-footer">
-                <p>Copyright 2020 - holberton School</p>
+                <p>
+                    Copyright {getFullYear()} - {getFooterCopy(true)}
+                </p>
             </div>
         </div>
     );
