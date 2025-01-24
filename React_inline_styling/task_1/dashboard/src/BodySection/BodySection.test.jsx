@@ -1,13 +1,13 @@
 import { render, screen } from '@testing-library/react';
-import BodySectionWithMarginBottom from './BodySectionWithMarginBottom';
+import BodySection from './BodySection';
 import { StyleSheetTestUtils } from "aphrodite";
 
 StyleSheetTestUtils.suppressStyleInjection()
-
-describe('BodySectionWithMarginBottom tests', () => {
+describe('BodySection tests', () => {
     it('should render the right children', () => {
-        render(<BodySectionWithMarginBottom title='test title'>test children</BodySectionWithMarginBottom>)
+        render(<BodySection title='test title'>test children</BodySection>)
         screen.getByText('test title')
         screen.getByText('test children')
     })
-});
+}
+);
